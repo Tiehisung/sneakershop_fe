@@ -1,22 +1,15 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
+import 'package:sneakershop_fe/models/sneaker_model.dart';
 import 'package:sneakershop_fe/views/shared/appstyle.dart';
 
 class ProductCard extends StatefulWidget {
   const ProductCard({
     super.key,
-    required this.price,
-    required this.category,
-    required this.id,
-    required this.name,
-    required this.image,
+    required this.shoe,
   });
-  final String price;
-  final String category;
-  final String id;
-  final String name;
-  final String image;
+  final Sneaker shoe;
 
   @override
   State<ProductCard> createState() => _ProductCardState();
@@ -25,6 +18,7 @@ class ProductCard extends StatefulWidget {
 class _ProductCardState extends State<ProductCard> {
   @override
   Widget build(BuildContext context) {
+    final shoe = widget.shoe;
     bool selected = true;
     return Padding(
       padding: const EdgeInsets.fromLTRB(8, 0, 20, 0),
@@ -47,11 +41,11 @@ class _ProductCardState extends State<ProductCard> {
                 children: [
                   Container(
                     height: MediaQuery.of(context).size.height * 0.2,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(image: AssetImage(widget.image)
-                            // image: NetworkImage(
-                            //     "https://images.unsplash.com/photo-1718703358140-20d926a089e0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
-
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/shoes/colorful.jpeg")
+                            // image: NetworkImage(shoe.images[0])
+                            // example:    "https://images.unsplash.com/photo-1718703358140-20d926a089e0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             )),
                   ),
                   Positioned(
@@ -69,12 +63,12 @@ class _ProductCardState extends State<ProductCard> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      widget.name,
+                      shoe.name,
                       style: appstyleWithHt(
                           36, FontWeight.bold, Colors.black, 1.1),
                     ),
                     Text(
-                      widget.category,
+                      shoe.category,
                       style: appstyleWithHt(
                           18, FontWeight.bold, Colors.black, 1.5),
                     ),
@@ -87,7 +81,7 @@ class _ProductCardState extends State<ProductCard> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      widget.price,
+                      shoe.price,
                       style: appstyle(
                         30,
                         FontWeight.w600,

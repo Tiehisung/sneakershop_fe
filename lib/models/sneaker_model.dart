@@ -8,7 +8,7 @@ class Sneaker {
   final String name;
   final String title;
   final String description;
-  final List<String> imageUrl;
+  final List<String> images;
   final String price;
   final String oldPrice;
   final String category;
@@ -19,7 +19,7 @@ class Sneaker {
     required this.name,
     required this.title,
     required this.description,
-    required this.imageUrl,
+    required this.images,
     required this.price,
     required this.oldPrice,
     required this.category,
@@ -31,7 +31,7 @@ class Sneaker {
         name: json["name"],
         title: json["title"],
         description: json["description"],
-        imageUrl: List<String>.from(json["imageUrl"].map((x) => x)),
+        images: List<String>.from(json["images"].map((x) => x)),
         price: json["price"],
         oldPrice: json["oldPrice"],
         category: json["category"],

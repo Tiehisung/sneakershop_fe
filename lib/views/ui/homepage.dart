@@ -126,13 +126,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                         scrollDirection: Axis.horizontal,
                                         itemBuilder: (context, index) {
                                           final shoe = snapshot.data![index];
-                                          return  ProductCard(
-                                              price: shoe.price,
-                                              category: shoe.category,
-                                              id: shoe.id,
-                                              name: shoe.name,
-                                              image:
-                                                  "assets/shoes/colorful.jpeg");
+                                          return ProductCard(
+                                            shoe: shoe,
+                                          );
                                         });
                                   }
                                 })),
