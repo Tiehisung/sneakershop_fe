@@ -1,0 +1,43 @@
+[
+  {
+    "_id": "1",
+    "name": "yellow-kid",
+    "title": "title1",
+    "description": "nice",
+    "imageUrl": [
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--IK0Y7RNu--/v1717368407/players/2024/Alhassan%20_Ibrahim/baba60547.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--gaXTDUN8--/v1717368409/players/2024/Alhassan%20_Ibrahim/fear20649.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--JeouJYFF--/v1717368411/players/2024/Alhassan%20_Ibrahim/fear-Allah11551.jpg"
+    ],
+    "price": "56",
+    "oldPrice": "63",
+    "category": "kid",
+    "sizes": [
+      {
+        "size": "3",
+        "isSelected": false,
+        "_id": "a1"
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "name": "blue-kid",
+    "title": "functionary",
+    "description": "beautiful",
+    "imageUrl": [
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--skkzkEsL--/v1717368413/players/2024/Alhassan%20_Ibrahim/hour94352.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--7YIoJ4V7--/v1717368418/players/2024/Alhassan%20_Ibrahim/alot77058.png"
+    ],
+    "price": "34",
+    "oldPrice": "32",
+    "category": "kid",
+    "sizes": [
+      {
+        "size": "3",
+        "isSelected": false,
+        "_id": "a2"
+      }
+    ]
+  }
+]
