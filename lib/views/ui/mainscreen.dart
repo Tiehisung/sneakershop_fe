@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sneakershop_fe/constants/colors.dart';
 import 'package:sneakershop_fe/controllers/mainscreen_provider.dart';
-import 'package:sneakershop_fe/views/ui/add_to_cartpage.dart';
 import 'package:sneakershop_fe/views/ui/cartpage.dart';
 import 'package:sneakershop_fe/views/ui/homepage.dart';
 import 'package:sneakershop_fe/views/ui/profile.dart';
@@ -16,7 +15,7 @@ class MainScreen extends StatelessWidget {
   List<Widget> pageList = const [
     HomePage(),
     SearchPage(),
-    AddToCartPage(),
+    HomePage(),
     CartPage(),
     ProfilePage()
   ];

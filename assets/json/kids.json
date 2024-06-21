@@ -5,15 +5,15 @@
     "title": "title1",
     "description": "nice",
     "images": [
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s---5dltF0A--/v1718642268/players/2024/Alhassan%20_Ibrahim/colorful%20sports%20shoes98347.png",
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--jBiPfqlb--/v1718642271/players/2024/Alhassan%20_Ibrahim/colorful28051.jpg",
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--aoVAUxRr--/v1718642275/players/2024/Alhassan%20_Ibrahim/Mens%20Shoes%20Sports%2082254.png",
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--sQkMyw9j--/v1718642276/players/2024/Alhassan%20_Ibrahim/nike-logo62456.png",
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--Nn_qdZyF--/v1718642278/players/2024/Alhassan%20_Ibrahim/Sports%20shoe%2028358.png"
+      "https://res.cloudinary.com/dgp4vzn3m/image/authenticated/s---5dltF0A--/v1718642268/players/2024/Alhassan%20_Ibrahim/colorful%20sports%20shoes98347.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--3WjruZiV--/v1718642288/players/2024/Alhassan%20_Ibrahim/yellow-lace3728.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--8KWkiHyE--/v1718642289/players/2024/Alhassan%20_Ibrahim/yellow-black7189.jpg"
     ],
     "price": "56",
     "oldPrice": "63",
-    "category": "kids",
+    "category": "kids shoe",
     "sizes": [
       {
         "size": "3",
@@ -28,7 +28,7 @@
     "title": "functionary",
     "description": "beautiful",
     "images": [
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--D2hQYrUJ--/v1718642281/players/2024/Alhassan%20_Ibrahim/Stylish%20And%20Simple%20Sneakers4181.png",
+      "https://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--D2hQYrUJ--/v1718642281/players/2024/Alhassan%20_Ibrahim/Stylish%20And%20Simple%20Sneakers4181.png",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--3WjruZiV--/v1718642288/players/2024/Alhassan%20_Ibrahim/yellow-lace3728.jpg",
@@ -36,10 +36,20 @@
     ],
     "price": "34",
     "oldPrice": "32",
-    "category": "kids",
+    "category": "kids shoe",
     "sizes": [
       {
+        "size": "7",
+        "isSelected": false,
+        "_id": "a0"
+      },
+      {
         "size": "3",
+        "isSelected": false,
+        "_id": "a1"
+      },
+      {
+        "size": "5",
         "isSelected": false,
         "_id": "a2"
       }
@@ -51,7 +61,7 @@
     "title": "smoothie",
     "description": "pure cotton",
     "images": [
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--D2hQYrUJ--/v1718642281/players/2024/Alhassan%20_Ibrahim/Stylish%20And%20Simple%20Sneakers4181.png",
+      "https://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--3WjruZiV--/v1718642288/players/2024/Alhassan%20_Ibrahim/yellow-lace3728.jpg",
@@ -59,10 +69,20 @@
     ],
     "price": "34",
     "oldPrice": "32",
-    "category": "kids",
+    "category": "kids shoe",
     "sizes": [
       {
+        "size": "7",
+        "isSelected": false,
+        "_id": "a0"
+      },
+      {
         "size": "3",
+        "isSelected": false,
+        "_id": "a1"
+      },
+      {
+        "size": "5",
         "isSelected": false,
         "_id": "a2"
       }
@@ -74,7 +94,7 @@
     "title": "soft",
     "description": "beautiful",
     "images": [
-      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--D2hQYrUJ--/v1718642281/players/2024/Alhassan%20_Ibrahim/Stylish%20And%20Simple%20Sneakers4181.png",
+      "https://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
       "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--3WjruZiV--/v1718642288/players/2024/Alhassan%20_Ibrahim/yellow-lace3728.jpg",
@@ -82,10 +102,119 @@
     ],
     "price": "34",
     "oldPrice": "32",
-    "category": "kids",
+    "category": "kids shoe",
     "sizes": [
       {
+        "size": "7",
+        "isSelected": false,
+        "_id": "a0"
+      },
+      {
         "size": "3",
+        "isSelected": false,
+        "_id": "a1"
+      },
+      {
+        "size": "5",
+        "isSelected": false,
+        "_id": "a2"
+      }
+    ]
+  },
+  {
+    "_id": "5",
+    "name": "black-kids",
+    "title": "soft",
+    "description": "beautiful",
+    "images": [
+      "https://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--aoVAUxRr--/v1718642275/players/2024/Alhassan%20_Ibrahim/Mens%20Shoes%20Sports%2082254.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--3WjruZiV--/v1718642288/players/2024/Alhassan%20_Ibrahim/yellow-lace3728.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--8KWkiHyE--/v1718642289/players/2024/Alhassan%20_Ibrahim/yellow-black7189.jpg"
+    ],
+    "price": "34",
+    "oldPrice": "32",
+    "category": "kids shoe",
+    "sizes": [
+      {
+        "size": "7",
+        "isSelected": false,
+        "_id": "a0"
+      },
+      {
+        "size": "3",
+        "isSelected": false,
+        "_id": "a1"
+      },
+      {
+        "size": "5",
+        "isSelected": false,
+        "_id": "a2"
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "name": "black-kids",
+    "title": "soft",
+    "description": "beautiful",
+    "images": [
+      "https://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--sQkMyw9j--/v1718642276/players/2024/Alhassan%20_Ibrahim/nike-logo62456.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--3WjruZiV--/v1718642288/players/2024/Alhassan%20_Ibrahim/yellow-lace3728.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--8KWkiHyE--/v1718642289/players/2024/Alhassan%20_Ibrahim/yellow-black7189.jpg"
+    ],
+    "price": "34",
+    "oldPrice": "32",
+    "category": "kids shoe",
+    "sizes": [
+      {
+        "size": "7",
+        "isSelected": false,
+        "_id": "a0"
+      },
+      {
+        "size": "3",
+        "isSelected": false,
+        "_id": "a1"
+      },
+      {
+        "size": "5",
+        "isSelected": false,
+        "_id": "a2"
+      }
+    ]
+  },
+  {
+    "_id": "7",
+    "name": "black-kids",
+    "title": "soft",
+    "description": "beautiful",
+    "images": [
+      "https://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--Nn_qdZyF--/v1718642278/players/2024/Alhassan%20_Ibrahim/Sports%20shoe%2028358.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--SUxy8kZu--/v1718642286/players/2024/Alhassan%20_Ibrahim/Travel%20Shoes%20Casual9465.png",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--XAE8UlF5--/v1718642287/players/2024/Alhassan%20_Ibrahim/white-black-lining3007.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--3WjruZiV--/v1718642288/players/2024/Alhassan%20_Ibrahim/yellow-lace3728.jpg",
+      "http://res.cloudinary.com/dgp4vzn3m/image/authenticated/s--8KWkiHyE--/v1718642289/players/2024/Alhassan%20_Ibrahim/yellow-black7189.jpg"
+    ],
+    "price": "34",
+    "oldPrice": "32",
+    "category": "kids shoe",
+    "sizes": [
+      {
+        "size": "7",
+        "isSelected": false,
+        "_id": "a0"
+      },
+      {
+        "size": "3",
+        "isSelected": false,
+        "_id": "a1"
+      },
+      {
+        "size": "5",
         "isSelected": false,
         "_id": "a2"
       }

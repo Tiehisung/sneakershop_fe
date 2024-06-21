@@ -20,6 +20,7 @@ class _ProductCardState extends State<ProductCard> {
   Widget build(BuildContext context) {
     final shoe = widget.shoe;
     bool selected = true;
+    // print('debugging url:${shoe.images[0]}');
     return Padding(
       padding: const EdgeInsets.fromLTRB(8, 0, 20, 0),
       child: ClipRRect(
@@ -40,13 +41,18 @@ class _ProductCardState extends State<ProductCard> {
               Stack(
                 children: [
                   Container(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    decoration: const BoxDecoration(
+                    height: MediaQuery.of(context).size.height * 0.25,
+                    margin: const EdgeInsets.only(left: 6),
+                    decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/shoes/colorful.jpeg")
-                            // image: NetworkImage(shoe.images[0])
-                            // example:    "https://images.unsplash.com/photo-1718703358140-20d926a089e0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            )),
+                      image: NetworkImage(shoe.images[0]),
+                      fit: BoxFit.cover,
+                      onError: (error, stackTrace) {
+                        // handle the error here, e.g., show a placeholder image
+                        print('Image load error: $error');
+                        print('ImageLink: ${shoe.images[0]}');
+                      },
+                    )),
                   ),
                   Positioned(
                     top: 10,
@@ -81,7 +87,7 @@ class _ProductCardState extends State<ProductCard> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      shoe.price,
+                      "\$${shoe.price}",
                       style: appstyle(
                         30,
                         FontWeight.w600,

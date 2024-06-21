@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sneakershop_fe/models/sneaker_model.dart';
 import 'package:sneakershop_fe/services/helpler.dart';
 import 'package:sneakershop_fe/views/shared/appstyle.dart';
-import 'package:sneakershop_fe/views/shared/product_card.dart';
+import 'package:sneakershop_fe/views/shared/home_widget.dart';
 
 import '../../constants/colors.dart';
 
@@ -81,6 +81,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           padding: const EdgeInsets.all(0),
                           indicatorSize: TabBarIndicatorSize.label,
                           indicatorColor: Colors.transparent,
+                          dividerColor: Colors.transparent,
                           controller: _tabController,
                           isScrollable: true,
                           labelColor: Colors.white,
@@ -102,110 +103,15 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   ),
                 ),
               ),
+              // Category shoes
               Padding(
                 padding: EdgeInsets.only(top: screenHeight * 0.265),
                 child: Container(
                   padding: const EdgeInsets.only(left: 12),
                   child: TabBarView(controller: _tabController, children: [
-                    Column(
-                      children: [
-                        SizedBox(
-                            height: screenHeight * .405,
-                            child: FutureBuilder(
-                                future: _maleSneakers,
-                                builder: (context, snapshot) {
-                                  if (snapshot.connectionState ==
-                                      ConnectionState.waiting) {
-                                    return const CircularProgressIndicator();
-                                  } else if (snapshot.hasError) {
-                                    return Text("Error: ${snapshot.error}");
-                                  } else {
-                                    final males = snapshot.data;
-                                    return ListView.builder(
-                                        itemCount: males!.length,
-                                        scrollDirection: Axis.horizontal,
-                                        itemBuilder: (context, index) {
-                                          final shoe = snapshot.data![index];
-                                          return ProductCard(
-                                            shoe: shoe,
-                                          );
-                                        });
-                                  }
-                                })),
-                        Column(
-                          children: [
-                            Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(12, 20, 12, 20),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text("Latest Shoes",
-                                      style: appstyle(
-                                          24, FontWeight.bold, Colors.black)),
-                                  Row(
-                                    children: [
-                                      Text("Show All",
-                                          style: appstyle(22, FontWeight.normal,
-                                              Colors.black)),
-                                      const Icon(
-                                        Icons.arrow_right,
-                                        size: 40,
-                                      )
-                                    ],
-                                  )
-                                ],
-                              ),
-                            ),
-                            SizedBox(
-                              height: screenHeight * 0.13,
-                              child: ListView.builder(
-                                  itemCount: 10,
-                                  scrollDirection: Axis.horizontal,
-                                  itemBuilder: (context, index) {
-                                    return Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Container(
-                                        decoration: const BoxDecoration(
-                                            color: Colors.white,
-                                            boxShadow: [
-                                              BoxShadow(
-                                                  color: Colors.grey,
-                                                  spreadRadius: 1,
-                                                  blurRadius: 0.8,
-                                                  offset: Offset(0, 1))
-                                            ],
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(16))),
-                                        height: screenHeight * .12,
-                                        width: screenWidth * .28,
-                                        child: Image.asset(
-                                            'assets/shoes/yellow-black.jpeg'),
-                                      ),
-                                    );
-                                  }),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Container(
-                          height: screenHeight * .405,
-                          color: Colors.green,
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Container(
-                          height: screenHeight * .405,
-                          color: Colors.blue,
-                        ),
-                      ],
-                    ),
+                    HomeWidget(categorySneakers: _maleSneakers,tabIndex:0),
+                    HomeWidget(categorySneakers: _femaleSneakers,tabIndex:1),
+                    HomeWidget(categorySneakers: _kidSneakers,tabIndex:2),
                   ]),
                 ),
               )
